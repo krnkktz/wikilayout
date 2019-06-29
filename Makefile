@@ -5,7 +5,9 @@ all:
 	cat style.css >> $(TARGET)
 	echo "\`" >> $(TARGET)
 	cat ext.js >> $(TARGET)
+	cd wikilayout && zip -r -FS ../wikilayout.zip *
+
 
 clean:
-	rm -v $(TARGET)
+	rm -v $(TARGET) wikilayout.zip
 
