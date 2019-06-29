@@ -162,7 +162,7 @@ h3#p-lang {
     margin-bottom: 1.5em;
 }
 
-.mw-jump-link, #siteSub, .printfooter, #mw-hidden-catlinks, #mw-head, #p-logo, #p-navigation, #p-interaction, #p-tb, #p-wikibase-otherprojects, #p-coll-print_export, .after-portlet-lang, .uls-settings-trigger, .mw-editsection, #coordinates, #siteNotice, .navbox, .vertical-navbox {
+.mw-jump-link, #siteSub, .printfooter, #mw-hidden-catlinks, #mw-head, #p-logo, #p-navigation, #p-interaction, #p-tb, #p-wikibase-otherprojects, #p-coll-print_export, .after-portlet-lang, .uls-settings-trigger, .mw-editsection, #coordinates, #siteNotice, .navbox, .vertical-navbox, .portal {
     display: none;
 }
 
