@@ -57,12 +57,16 @@ table {
     border-collapse: collapse;
 }
 
-small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigation, .thumbcaption, .gallerytext, .reflist, .mw-references-wrap, .stub {
+small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigation, .thumbcaption, .gallerytext, .stub {
     font-size: 75%;
 }
 
 .center {
     text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
 
 #content {
@@ -181,11 +185,24 @@ li.gallerybox {
 }
 
 .mw-references-wrap, .reflist {
-    column-width: 30em;
+    column-width: 22.5em;
 }
 
 ol.references {
+    font-size: 75%;
     box-sizing: border-box;
     max-width: 40em;
+}
+
+.hlist li {
+    display: inline;
+}
+
+.hlist li::after {
+    content: " · ";
+}
+
+.hlist li:last-child::after {
+    content: none;
 }
 

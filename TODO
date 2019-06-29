@@ -9,3 +9,5 @@
 
 - jump back to the right anchor after css has loaded (we should find a way to
   prevent loading the first css anyway)
+
+- be more precise with infoboxes
