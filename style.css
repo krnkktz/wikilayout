@@ -166,8 +166,19 @@ h3#p-lang {
     margin-bottom: 1.5em;
 }
 
-.mw-jump-link, #siteSub, .printfooter, #mw-hidden-catlinks, #mw-head, #p-logo, #p-navigation, #p-interaction, #p-tb, #p-wikibase-otherprojects, #p-coll-print_export, .after-portlet-lang, .uls-settings-trigger, .mw-editsection, #coordinates, #siteNotice, .navbox, .vertical-navbox, .portal {
+.mw-jump-link, #siteSub, .printfooter, #mw-hidden-catlinks, #mw-head, #p-logo, #p-navigation, #p-interaction, #p-tb, #p-wikibase-otherprojects, #p-coll-print_export, .after-portlet-lang, .uls-settings-trigger, #coordinates, #siteNotice, .navbox, .vertical-navbox, .portal {
     display: none;
+}
+
+.mw-editsection {
+    margin-left: 1em;
+    font-size: 50%;
+    vertical-align: middle;
+    color: #AAAAAA;
+}
+
+.mw-editsection a {
+    color: #AAAAAA;
 }
 
 .hatnote {
@@ -206,3 +217,6 @@ ol.references {
     content: none;
 }
 
+.toctogglespan, .toctogglecheckbox {
+    display: none;
+}
