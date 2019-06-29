@@ -34,7 +34,7 @@ ul {
     list-style-type: circle;
 }
 
-p, ul, .hatnote, #toc {
+p, ul, ol, .hatnote, #toc {
     box-sizing: border-box;
     max-width: 30em;
 }
