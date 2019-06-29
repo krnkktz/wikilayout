@@ -1,0 +1,181 @@
+body {
+    line-height: 1.6;
+    font-size: 1.3em;
+    background-color: #FFFFFF;
+    color: #444444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2em;
+    line-height: 1.0;
+}
+
+a {
+    color: #444444;
+    background: none;
+}
+
+a:visited {
+    color: #884488;
+}
+
+a:hover {
+    text-decoration-style: dashed;
+}
+
+.external {
+    background-position: center right;
+    background-repeat: no-repeat;
+background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="12"%3E %3Cpath fill="%23444" d="M4.8 1.9H10v5.4L8.4 8.9L7.1 7.6L3.7 11L1 8.3l3.5-3.5L3.2 3.5L4.8 1.9z"/%3E %3Cpath fill="%23fff" d="M9 2.9l0 4.9L7.2 6L3.7 9.5L2.5 8.3L6 4.8L4.1 2.9L9 2.9z"/%3E %3C/svg%3E');
+    padding-right: 13px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+p, ul, .hatnote, #toc {
+    box-sizing: border-box;
+    max-width: 30em;
+}
+
+blockquote {
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+blockquote > p {
+    max-width: 27em;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigation, .thumbcaption, .gallerytext, .reflist {
+    font-size: 75%;
+}
+
+.center {
+    text-align: center;
+}
+
+#content {
+    background-color: #FFFFFF;
+    padding: 4em;
+}
+
+.infobox, .tleft, .tright {
+    float: right;
+    clear: right;
+    margin-left: 4em;
+}
+
+.wikitable, #catlinks, .infobox, .ambox, .ombox {
+    border: 1px solid #BBBBBB;
+}
+
+.catlinks, .ambox, .ombox, .mbox-small {
+    border-collapse: separate;
+    padding: .6em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 40em;
+    box-sizing: border-box;
+}
+
+#mw-navigation {
+    box-sizing: border-box;
+    border-top: 1px solid #BBBBBB;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+
+
+
+#mw-navigation > h2, #footer {
+    display: none;
+}
+
+h3#p-lang {
+    margin: none;
+}
+
+#firstHeading {
+    margin-top: 0;
+}
+
+.infobox.geography td, .infobox.geography th {
+    border-top: 1px solid #BBBBBB;
+    padding: .4em .6em .4em .6em;
+}
+
+.infobox td, .infobox th {
+    vertical-align: top;
+    text-align: left;
+}
+
+.infobox.geography .mergedtoprow td, .infobox.geography .mergedtoprow th {
+    border-top: 1px solid #BBBBBB;
+    padding: .4em .6em .2em .6em;
+}
+
+.infobox.geography .mergedbottomrow td, .infobox.geography .mergedbottomrow th {
+    border-top: 0;
+    border-bottom: 1px solid #BBBBBB;
+    padding: 0 .6em .4em .6em;
+}
+
+.infobox.geography .mergedrow td, .infobox.geography .mergedrow th {
+    border: 0;
+    padding: 0 .6em .2em .6em;
+}
+
+.mw-collapsible-toggle {
+    text-align: right;
+    padding-left: .4em;
+    float: right;
+    text-decoration: underline;
+    user-select: none;
+}
+
+.wikitable > * > tr > th, .wikitable > * > tr > td {
+    border: 1px solid #BBBBBB;
+    padding: .2em .4em;
+}
+
+.thumbcaption, .gallerytext {
+    font-style: italic;
+    margin-bottom: 1.5em;
+}
+
+.mw-jump-link, #siteSub, .printfooter, #mw-hidden-catlinks, #mw-head, #p-logo, #p-navigation, #p-interaction, #p-tb, #p-wikibase-otherprojects, #p-coll-print_export, .after-portlet-lang, .uls-settings-trigger, .mw-editsection, #coordinates, #siteNotice, .navbox, .vertical-navbox {
+    display: none;
+}
+
+.hatnote {
+    font-style: italic;
+}
+
+ul.gallery {
+    padding: 0;
+    max-width: 100%;
+}
+
+li.gallerybox {
+    vertical-align: top;
+    display: inline-block;
+}
+
+ol.references {
+    max-width: 40em;
+}
+

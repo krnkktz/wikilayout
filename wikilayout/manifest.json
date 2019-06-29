@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Wikilayout",
+    "version": "0.0",
+
+    "description": "Attempts to improve Wikipedia's layout.",
+
+    "icons": {
+        "48": "icons/wikilayout-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.wikipedia.org/*"],
+            "js": ["wikilayout.js"]
+        }
+    ]
+
+}
