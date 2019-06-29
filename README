@@ -1,2 +1,5 @@
 The idea is just to increase font size and line spacing, decrease line length,
 and hide the stuff we don't care about.
+
+Use `make` to put together the script and zip the extension, which you can then
+load as a "`temporary add-on" on Firefox (>=45) under "about:debugging".

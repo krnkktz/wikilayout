@@ -57,7 +57,7 @@ table {
     border-collapse: collapse;
 }
 
-small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigation, .thumbcaption, .gallerytext, .reflist {
+small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigation, .thumbcaption, .gallerytext, .reflist, .mw-references-wrap, .stub {
     font-size: 75%;
 }
 
@@ -70,17 +70,22 @@ small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigat
     padding: 4em;
 }
 
+.infobox {
+    margin-bottom: 2em;
+    font-size: 75%;
+}
+
 .infobox, .tleft, .tright {
     float: right;
     clear: right;
     margin-left: 4em;
 }
 
-.wikitable, #catlinks, .infobox, .ambox, .ombox {
+.wikitable, #catlinks, .infobox, .ambox, .ombox, .stub {
     border: 1px solid #BBBBBB;
 }
 
-.catlinks, .ambox, .ombox, .mbox-small {
+.catlinks, .ambox, .ombox, .mbox-small, .stub {
     border-collapse: separate;
     padding: .6em;
     margin-bottom: 1em;
@@ -113,7 +118,7 @@ h3#p-lang {
     margin-top: 0;
 }
 
-.infobox.geography td, .infobox.geography th {
+.infobox td, .infobox th {
     border-top: 1px solid #BBBBBB;
     padding: .4em .6em .4em .6em;
 }
@@ -123,18 +128,18 @@ h3#p-lang {
     text-align: left;
 }
 
-.infobox.geography .mergedtoprow td, .infobox.geography .mergedtoprow th {
+.infobox .mergedtoprow td, .infobox .mergedtoprow th {
     border-top: 1px solid #BBBBBB;
     padding: .4em .6em .2em .6em;
 }
 
-.infobox.geography .mergedbottomrow td, .infobox.geography .mergedbottomrow th {
+.infobox .mergedbottomrow td, .infobox .mergedbottomrow th {
     border-top: 0;
     border-bottom: 1px solid #BBBBBB;
     padding: 0 .6em .4em .6em;
 }
 
-.infobox.geography .mergedrow td, .infobox.geography .mergedrow th {
+.infobox .mergedrow td, .infobox .mergedrow th {
     border: 0;
     padding: 0 .6em .2em .6em;
 }
@@ -175,7 +180,12 @@ li.gallerybox {
     display: inline-block;
 }
 
+.mw-references-wrap, .reflist {
+    column-width: 30em;
+}
+
 ol.references {
+    box-sizing: border-box;
     max-width: 40em;
 }
 
