@@ -4,3 +4,5 @@
 - go through markup description and check if everything looks ok here
 - implement navboxes (currently deactivated)
 - design the geography infobox properly
+
+- have some way to access the menu, edit buttons etc.
