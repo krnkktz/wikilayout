@@ -17,5 +17,4 @@
 
 - hilight reference when clicked
 
-- prevent body from being bigger than 100vw and have scrollbars for elements
-  (like tables) that don't fit
+- use x2 for centered images too?
