@@ -232,6 +232,10 @@ ol.references {
     width: 20vw;
 }
 
+.tnone .thumbimage {
+    width: 80vw;
+}
+
 @media(max-width: 55em) {
     .infobox, .tleft, .tright {
         float: none;

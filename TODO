@@ -1,20 +1,24 @@
-- bug: when images reach their maximum size, the div they are in (as well as
-  their caption) keeps expanding.
-
 - test original link colors
+
 - layout slideshow
+
 - hierarchize titles
+
 - go through markup description and check if everything looks ok here
-- implement navboxes (currently deactivated)
+
+- implement navboxes? not sure if really needed - there could be a checkbox for
+  that
+
 - design the geography infobox properly
-
-- have some way to access the menu, edit buttons etc.
-
-- jump back to the right anchor after css has loaded (we should find a way to
-  prevent loading the first css anyway)
 
 - be more precise with infoboxes
 
+- have some way to access the menu and edit, talk etc. links
+
+- have the script run just after html is received, before scripts are run and
+  ressources retrieved.
+
+- jump back to the right anchor after css has loaded
+
 - hilight reference when clicked
 
-- use x2 for centered images too?
