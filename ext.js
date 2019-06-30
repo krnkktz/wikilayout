@@ -15,15 +15,17 @@ document.querySelectorAll('link[rel="stylesheet"]').forEach(el => el.parentNode.
 document.querySelectorAll('style').forEach(el => el.parentNode.removeChild(el));
 
 
+
 /* using directly the x2 images sizes
  * if i'm not mistaken, this takes ~4x more internet, so don't do that on mobile data? though we're not there yet... */
-document.querySelectorAll('.thumbinner').forEach(el => { el.style['min-width'] = el.style['width']; el.style['width'] = ''; });
+document.querySelectorAll('.tleft .thumbinner, .tright .thumbinner').forEach(el => { el.style['min-width'] = el.style['width']; el.style['width'] = ''; });
+
+document.querySelectorAll('.tnone .thumbinner').forEach(el => { el.style['max-width'] = el.style['width']; el.style['width'] = ''; });
 
 
-document.querySelectorAll('.thumbimage').forEach(el => {
+document.querySelectorAll('.tleft .thumbimage, .tright .thumbimage').forEach(el => {
     el.style['min-width'] = el.width + 'px';
     el.style['max-width'] = el.width * 2 + 'px';
-    el.style['height'] = 'auto';
     el.srcset.split(',').forEach(e => {
         var e1 = e.trim();
         if (e1.endsWith('2x')) {

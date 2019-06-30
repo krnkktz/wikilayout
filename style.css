@@ -25,7 +25,7 @@ a:hover {
 .external {
     background-position: center right;
     background-repeat: no-repeat;
-background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="12"%3E %3Cpath fill="%23444" d="M4.8 1.9H10v5.4L8.4 8.9L7.1 7.6L3.7 11L1 8.3l3.5-3.5L3.2 3.5L4.8 1.9z"/%3E %3Cpath fill="%23fff" d="M9 2.9l0 4.9L7.2 6L3.7 9.5L2.5 8.3L6 4.8L4.1 2.9L9 2.9z"/%3E %3C/svg%3E');
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="12"%3E %3Cpath fill="%23444" d="M4.8 1.9H10v5.4L8.4 8.9L7.1 7.6L3.7 11L1 8.3l3.5-3.5L3.2 3.5L4.8 1.9z"/%3E %3Cpath fill="%23fff" d="M9 2.9l0 4.9L7.2 6L3.7 9.5L2.5 8.3L6 4.8L4.1 2.9L9 2.9z"/%3E %3C/svg%3E');
     padding-right: 13px;
 }
 
@@ -83,7 +83,11 @@ small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigat
     margin-left: 4em;
 }
 
-.wikitable, #catlinks, .infobox, .ambox, .ombox, .stub {
+.tnone .thumbimage {
+    max-width: 80vw;
+}
+
+.wikitable > tbody, #catlinks, .infobox, .ambox, .ombox, .stub {
     border: 1px solid #BBBBBB;
 }
 
@@ -92,7 +96,7 @@ small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigat
     padding: .6em;
     margin-bottom: 1em;
     margin-top: 1em;
-    width: 40em;
+    max-width: 40em;
     box-sizing: border-box;
 }
 
@@ -220,12 +224,13 @@ ol.references {
 }
 
 
-/*.thumbinner {
+.thumbimage {
+    height: auto;
+}
+
+.tleft .thumbimage, .tright .thumbimage, .tleft .thumbinner, .tright .thumbinner {
     width: 20vw;
-} */
-    .thumbimage, .thumbinner {
-        width: 20vw;
-    }
+}
 
 @media(max-width: 55em) {
     .infobox, .tleft, .tright {
@@ -233,6 +238,7 @@ ol.references {
         margin: auto;
         text-align: center;
         clear: both;
+        margin-top: 1em;
     }
 
     .tleft > div, .tright > div {
@@ -255,19 +261,27 @@ ol.references {
     }
 
     .thumbimage {
-        width: 80vw;
+        width: 80vw !important;
     }
 
     .thumbinner {
-        width: unset;
+        width: unset !important;
     }
 
     /* this fucks the titles up and doesn't work on some tables but looks like
      * a step in the right direction... */
     /*
     .mw-parser-output > * {
-        max-width: 80vw;
-        overflow-y: auto;
+    max-width: 80vw;
+    overflow-y: auto;
     }
-    */
+     */
+
 }
+
+.mw-parser-output table {
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: block;
+}
+
