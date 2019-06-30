@@ -1,3 +1,6 @@
+- bug: when images reach their maximum size, the div they are in (as well as
+  their caption) keeps expanding.
+
 - test original link colors
 - layout slideshow
 - hierarchize titles
@@ -11,3 +14,8 @@
   prevent loading the first css anyway)
 
 - be more precise with infoboxes
+
+- hilight reference when clicked
+
+- prevent body from being bigger than 100vw and have scrollbars for elements
+  (like tables) that don't fit
