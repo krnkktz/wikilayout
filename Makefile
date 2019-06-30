@@ -1,13 +1,13 @@
-TARGET=wikilayout/wikilayout.js
+SOURCE=icons/ manifest.json block.js ext.js style.css
+BUILD=wikilayout
 
 all:
-	echo "var css=\`" > $(TARGET)
-	cat style.css >> $(TARGET)
-	echo "\`" >> $(TARGET)
-	cat ext.js >> $(TARGET)
-	cd wikilayout && zip -r -FS ../wikilayout.zip *
+	@mkdir -pv $(BUILD)
+	@cp -rv $(SOURCE) $(BUILD)
+	@cd wikilayout && zip -r -FS ../wikilayout.zip *
+	@rm -rfv $(BUILD)
 
 
 clean:
-	rm -v $(TARGET) wikilayout.zip
+	@rm -vf wikilayout.zip
 

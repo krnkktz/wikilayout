@@ -1,5 +1,8 @@
-/* remove all inline css, breaks a lot of stuff.. */
-/*document.querySelectorAll('[style]').forEach(el => el.removeAttribute('style')); */
+/* remove internal css */
+document.querySelectorAll('style').forEach(el => el.parentNode.removeChild(el));
+
+/* remove linked stylesheets */
+document.querySelectorAll('link[rel="stylesheet"]').forEach(el => el.parentNode.removeChild(el));
 
 /* remove inline css for font-size */
 document.querySelectorAll('[style]').forEach(el => {
@@ -8,13 +11,8 @@ document.querySelectorAll('[style]').forEach(el => {
     }
 });
 
-/* remove linked stylesheets */
-document.querySelectorAll('link[rel="stylesheet"]').forEach(el => el.parentNode.removeChild(el));
 
-/* remove internal css */
-document.querySelectorAll('style').forEach(el => el.parentNode.removeChild(el));
-
-
+console.log('wikilayout: ' + window.performance.now() + ' css removed');
 
 /* using directly the x2 images sizes
  * if i'm not mistaken, this takes ~4x more internet, so don't do that on
@@ -51,12 +49,5 @@ document.querySelectorAll('.tnone .thumbimage').forEach(el => {
     el.src = get2x(el.src, el.srcset);
 });
 
+console.log('wikilayout: ' + window.performance.now() + ' src replaced');
 
-/* inject our own css */
-var style = document.createElement("STYLE");
-var text = document.createTextNode(css);
-style.appendChild(text);
-document.head.appendChild(style);
-
-/* and this is where the browser should start querying other stuff,
- * interpreting css and running scripts.. */

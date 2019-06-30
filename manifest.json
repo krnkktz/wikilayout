@@ -1,0 +1,35 @@
+{
+
+    "manifest_version": 2,
+    "name": "Wikilayout",
+    "version": "0.0",
+
+    "description": "Attempts to improve Wikipedia's layout.",
+
+    "icons": {
+        "48": "icons/wikilayout-48.png"
+    },
+
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.wikipedia.org/wiki/*"],
+            "run_at": "document_start",
+            "css": ["style.css"]
+        },
+       {
+            "matches": ["*://*.wikipedia.org/wiki/*"],
+            "run_at": "document_end",
+            "js": ["ext.js"]
+        }
+    ],
+
+    "background": {
+            "scripts": ["block.js"]
+    }
+}

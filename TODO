@@ -18,6 +18,8 @@
 - have the script run just after html is received, before scripts are run and
   ressources retrieved.
 
+- inject the css properly
+
 - jump back to the right anchor after css has loaded
 
 - hilight reference when clicked
