@@ -1,4 +1,4 @@
-SOURCE=icons/ manifest.json block.js ext.js style.css
+SOURCE=css/ js/ icons/ manifest.json
 BUILD=wikilayout
 
 all:

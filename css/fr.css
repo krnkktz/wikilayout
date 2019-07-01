@@ -1,0 +1,64 @@
+.infobox_v2 {
+    font-size: 75%;
+}
+
+
+.infobox_v2 {
+    margin-bottom: 2em;
+    font-size: 75%;
+}
+
+
+.infobox, .infobox_v2, .tleft, .tright {
+    float: right;
+    clear: right;
+    margin-left: 4em;
+}
+
+
+.infobox_v2 {
+    width: 294px;
+}
+
+
+.infobox_v2 {
+    border: 1px solid #BBBBBB;
+}
+
+/*
+.infobox td, .infobox th {
+    border-top: 1px solid #BBBBBB;
+    padding: .4em .6em .4em .6em;
+}
+
+.infobox td, .infobox th {
+    vertical-align: top;
+    text-align: left;
+}
+
+.infobox .mergedtoprow td, .infobox .mergedtoprow th {
+    border-top: 1px solid #BBBBBB;
+    padding: .4em .6em .2em .6em;
+}
+
+.infobox .mergedbottomrow td, .infobox .mergedbottomrow th {
+    border-top: 0;
+    border-bottom: 1px solid #BBBBBB;
+    padding: 0 .6em .4em .6em;
+}
+
+.infobox .mergedrow td, .infobox .mergedrow th {
+    border: 0;
+    padding: 0 .6em .2em .6em;
+}
+
+@media(max-width: 55em) {
+.infobox, .infobox_v2, .tleft, .tright {
+float: none;
+margin: auto;
+text-align: center;
+clear: both;
+margin-top: 1em;
+}
+}
+ */

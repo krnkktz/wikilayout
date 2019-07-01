@@ -20,9 +20,22 @@
         {
             "matches": ["*://*.wikipedia.org/wiki/*"],
             "run_at": "document_start",
-            "css": ["style.css"]
+            "css": ["css/style.css"]
         },
-       {
+
+        {
+            "matches": ["*://*.wikipedia.org/wiki/*"],
+            "run_at": "document_start",
+            "css": ["css/narrow.css"]
+        },
+
+        {
+            "matches": ["*://fr.wikipedia.org/wiki/*"],
+            "run_at": "document_start",
+            "css": ["css/fr.css"]
+        },
+
+        {
             "matches": ["*://*.wikipedia.org/wiki/*"],
             "run_at": "document_end",
             "js": ["ext.js"]
@@ -30,6 +43,6 @@
     ],
 
     "background": {
-            "scripts": ["block.js"]
+        "scripts": ["block.js"]
     }
 }
