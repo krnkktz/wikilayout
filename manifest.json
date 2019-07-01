@@ -38,11 +38,11 @@
         {
             "matches": ["*://*.wikipedia.org/wiki/*"],
             "run_at": "document_end",
-            "js": ["ext.js"]
+            "js": ["js/ext.js"]
         }
     ],
 
     "background": {
-        "scripts": ["block.js"]
+        "scripts": ["js/block.js"]
     }
 }

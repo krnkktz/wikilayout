@@ -1,15 +1,11 @@
-/* console.log("ds loaded " + window.performance.now());
-
-function logURL(requestDetails) {
-    console.log("Loading: " + requestDetails.url);
+function logURL(details) {
+    if (details.type=="stylesheet") {
+        return ({cancel: true});
+    }
 }
-
-console.log("function defined");
-
 
 browser.webRequest.onBeforeRequest.addListener(
     logURL,
-    {urls: ["<all_urls>"]}
+    {urls: ["*://*.wikipedia.org/*"]},
+    ["blocking"]
 );
-
-console.log("listener added"); */
