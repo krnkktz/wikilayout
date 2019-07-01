@@ -20,33 +20,35 @@ console.log('wikilayout: ' + window.performance.now() + ' css removed');
  * 80vw is <= image width */
 
 function get2x(src, srcset) {
-    l = srcset.split(',');
-    for (var i = 0; i < l.length; i++) {
-        var e1 = l[i].trim();
-        if (e1.endsWith('2x')) {
-            return e1.split(' ')[0];
+    if (srcset) {
+        l = srcset.split(',');
+        for (var i = 0; i < l.length; i++) {
+            var e1 = l[i].trim();
+            if (e1.endsWith('2x')) {
+                return e1.split(' ')[0];
+            }
         }
     }
     return src;
 }
 
 
-document.querySelectorAll('.tleft .thumbimage, .tright .thumbimage').forEach(el => {
-    var ti = el.parentElement.parentElement;
-    el.style['min-width'] = el.width + 'px';
-    el.style['max-width'] = el.width * 2 + 'px';
-    ti.style['min-width'] = el.width + 'px';
-    ti.style['max-width'] = el.width * 2 + 'px';
-    ti.style['width'] = '';
-    el.src = get2x(el.src, el.srcset);
+document.querySelectorAll('.tleft .thumbinner, :not(.tmulti) .tright .thumbinner').forEach(el => {
+    var tc = el.firstChild.firstChild;
+    tc.style['min-width'] = tc.width + 'px';
+    tc.style['max-width'] = tc.width * 2 + 'px';
+    el.style['min-width'] = tc.width + 'px';
+    el.style['max-width'] = tc.width * 2 + 'px';
+    el.style['width'] = '';
+    tc.src = get2x(tc.src, tc.srcset);
 });
 
-document.querySelectorAll('.tnone .thumbimage').forEach(el => {
-    var ti = el.parentElement.parentElement;
-    el.style['max-width'] = el.width * 2 + 'px';
-    ti.style['max-width'] = el.width * 2 + 'px';
-    ti.style['width'] = '';
-    el.src = get2x(el.src, el.srcset);
+document.querySelectorAll('.tnone .thumbinner').forEach(el => {
+    var tc = el.firstChild.firstChild;
+    tc.style['max-width'] = tc.width * 2 + 'px';
+    el.style['max-width'] = tc.width * 2 + 'px';
+    el.style['width'] = '';
+    tc.src = get2x(tc.src, tc.srcset);
 });
 
 console.log('wikilayout: ' + window.performance.now() + ' src replaced');
