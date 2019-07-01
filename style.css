@@ -38,6 +38,12 @@ p, ul, ol, .hatnote, #toc {
     max-width: 30em;
 }
 
+.mw-parser-output table {
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: block;
+}
+
 blockquote {
     margin: 0;
     padding-left: 1.5em;
@@ -172,6 +178,10 @@ h3#p-lang {
     display: none;
 }
 
+#p-lang {
+    display: block;
+}
+
 .mw-editsection {
     margin-left: 1em;
     font-size: 50%;
@@ -282,10 +292,3 @@ ol.references {
      */
 
 }
-
-.mw-parser-output table {
-    overflow-y: hidden;
-    overflow-x: auto;
-    display: block;
-}
-

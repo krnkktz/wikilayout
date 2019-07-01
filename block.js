@@ -1,4 +1,4 @@
-console.log("ds loaded " + window.performance.now());
+/* console.log("ds loaded " + window.performance.now());
 
 function logURL(requestDetails) {
     console.log("Loading: " + requestDetails.url);
@@ -12,4 +12,4 @@ browser.webRequest.onBeforeRequest.addListener(
     {urls: ["<all_urls>"]}
 );
 
-console.log("listener added");
+console.log("listener added"); */
