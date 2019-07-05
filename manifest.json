@@ -37,6 +37,12 @@
 
         {
             "matches": ["*://*.wikipedia.org/wiki/*"],
+            "run_at": "document_start",
+            "js": ["js/start.js"]
+        },
+
+        {
+            "matches": ["*://*.wikipedia.org/wiki/*"],
             "run_at": "document_end",
             "js": ["js/ext.js"]
         }

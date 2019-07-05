@@ -32,6 +32,7 @@ function get2x(src, srcset) {
     return src;
 }
 
+browser.runtime.sendMessage('unblock');
 
 document.querySelectorAll('.tleft .thumbinner, :not(.tmulti) .tright .thumbinner').forEach(el => {
     var tc = el.firstChild.firstChild;
@@ -49,6 +50,10 @@ document.querySelectorAll('.tnone .thumbinner').forEach(el => {
     el.style['max-width'] = tc.width * 2 + 'px';
     el.style['width'] = '';
     tc.src = get2x(tc.src, tc.srcset);
+});
+
+document.querySelectorAll('img:not(.thumbimage)').forEach(el => {
+        el.src = el.src;
 });
 
 console.log('wikilayout: ' + window.performance.now() + ' src replaced');
