@@ -217,6 +217,11 @@ ol.references {
     max-width: 40em;
 }
 
+ol.references li:target, sup.reference:target
+{
+    background-color: #ffffdd;
+}
+
 .hlist li {
     display: inline;
 }

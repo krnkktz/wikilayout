@@ -1,21 +1,21 @@
-- test original link colors
+- find a better visited link color
 
-- layout slideshow
+- fix & layout slideshow
 
 - hierarchize titles
 
 - go through markup description and check if everything looks ok here
 
-- implement navboxes? not sure if really needed - there could be a checkbox for
-  that
-
-- design the geography infobox properly
-
-- be more precise with infoboxes
-
 - have some way to access the menu and edit, talk etc. links
 
-- hilight reference when clicked
+- Deactivate on talk, special and user pages
+
+
+Later:
+
+- implement navboxes? not sure if really needed - there could be a checkbox
+
+- be more precise with infoboxes
 
 - deal with multi thumbnails
 
