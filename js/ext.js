@@ -34,15 +34,23 @@ function get2x(src, srcset) {
 
 browser.runtime.sendMessage('unblock');
 
+
 document.querySelectorAll('.tleft .thumbinner, :not(.tmulti) .tright .thumbinner').forEach(el => {
-    var tc = el.firstChild.firstChild;
-    tc.style['min-width'] = tc.width + 'px';
-    tc.style['max-width'] = tc.width * 2 + 'px';
-    el.style['min-width'] = tc.width + 'px';
-    el.style['max-width'] = tc.width * 2 + 'px';
-    el.style['width'] = '';
-    tc.src = get2x(tc.src, tc.srcset);
+    if (el.firstChild && el.firstChild.firstChild && el.firstChild.firstChild.style) {
+        var tc = el.firstChild.firstChild;
+        tc.style['min-width'] = tc.width + 'px';
+        tc.style['max-width'] = tc.width * 2 + 'px';
+        el.style['min-width'] = tc.width + 'px';
+        el.style['max-width'] = tc.width * 2 + 'px';
+        el.style['width'] = '';
+        tc.src = get2x(tc.src, tc.srcset);
+    } else {
+        console.log('unknown .thumbinner: ');
+        console.log(el);
+    }
 });
+
+
 
 document.querySelectorAll('.tnone .thumbinner').forEach(el => {
     var tc = el.firstChild.firstChild;
@@ -53,7 +61,7 @@ document.querySelectorAll('.tnone .thumbinner').forEach(el => {
 });
 
 document.querySelectorAll('img:not(.thumbimage)').forEach(el => {
-        el.src = el.src;
+    el.src = el.src;
 });
 
 console.log('wikilayout: ' + window.performance.now() + ' src replaced');
