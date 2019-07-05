@@ -89,10 +89,6 @@ small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigat
     margin-left: 4em;
 }
 
-.tnone .thumbimage {
-    max-width: 80vw;
-}
-
 .wikitable > tbody, #catlinks, .infobox, .ambox, .ombox, .stub {
     border: 1px solid #BBBBBB;
 }
@@ -244,7 +240,7 @@ ol.references li:target, sup.reference:target
 }
 
 .tleft .thumbimage, .tright .thumbimage, .tleft .thumbinner, .tright .thumbinner {
-    width: 20vw;
+    width: 25vw;
 }
 
 .tnone .thumbimage {

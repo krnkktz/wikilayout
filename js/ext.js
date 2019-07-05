@@ -35,30 +35,23 @@ function get2x(src, srcset) {
 browser.runtime.sendMessage('unblock');
 
 
-document.querySelectorAll('.tleft .thumbinner, :not(.tmulti) .tright .thumbinner').forEach(el => {
+document.querySelectorAll(':not(.tmulti) .tnone .thumbinner, :not(.tmulti) .tleft .thumbinner, :not(.tmulti) .tright .thumbinner').forEach(el => {
     if (el.firstChild && el.firstChild.firstChild && el.firstChild.firstChild.style) {
         var tc = el.firstChild.firstChild;
-        tc.style['min-width'] = tc.width + 'px';
-        tc.style['max-width'] = tc.width * 2 + 'px';
-        el.style['min-width'] = tc.width + 'px';
-        el.style['max-width'] = tc.width * 2 + 'px';
-        el.style['width'] = '';
-        tc.src = get2x(tc.src, tc.srcset);
+        var s = tc.src.split('/');
+        if (s.length > 0) {
+            var w = parseInt(s[s.length - 1].split('px')[0]);
+            tc.style['max-width'] = w * 2 + 'px';
+            el.style['max-width'] = w * 2 + 'px';
+            el.style['width'] = '';
+            tc.src = get2x(tc.src, tc.srcset);
+        }
     } else {
         console.log('unknown .thumbinner: ');
         console.log(el);
     }
 });
 
-
-
-document.querySelectorAll('.tnone .thumbinner').forEach(el => {
-    var tc = el.firstChild.firstChild;
-    tc.style['max-width'] = tc.width * 2 + 'px';
-    el.style['max-width'] = tc.width * 2 + 'px';
-    el.style['width'] = '';
-    tc.src = get2x(tc.src, tc.srcset);
-});
 
 document.querySelectorAll('img:not(.thumbimage)').forEach(el => {
     el.src = el.src;
