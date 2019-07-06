@@ -2,10 +2,11 @@ blocked = [];
 
 // block all css
 browser.webRequest.onBeforeRequest.addListener(
-    (d => {return ({cancel: true});}),
+    (d => {console.log(d); return ({cancel: d.originUrl.includes(".wikipedia.org/wiki/")});}),
     {
         types: ["stylesheet"],
         urls: ["*://*.wikipedia.org/*"]
+//        originUrls: ["*://*.wikipedia.org/wiki/*"]
     },
     ["blocking"]
 );
