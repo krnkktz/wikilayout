@@ -1,22 +1,18 @@
 - find a better visited link color
-
 - fix & layout slideshow
-
 - hierarchize titles
-
 - go through markup description and check if everything looks ok here
-
 - have some way to access the menu and edit, talk etc. links
-
 - Deactivate on talk, special and user pages?
-
+- style of code js/css
+- use a linter
+- use web-ext
+- check if we really need all these permissions
+- get the switch to work
 
 Later:
 
 - implement navboxes? not sure if really needed - there could be a checkbox
-
 - be more precise with infoboxes
-
 - deal with multi thumbnails
-
-- button to disable
+- find a better name and logo

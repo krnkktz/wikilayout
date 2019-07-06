@@ -2,7 +2,7 @@ blocked = [];
 
 // block all css
 browser.webRequest.onBeforeRequest.addListener(
-    (d => {console.log(d); return ({cancel: d.originUrl.includes(".wikipedia.org/wiki/")});}),
+    (d => {return ({cancel: d.originUrl.includes(".wikipedia.org/wiki/")});}),
     {
         types: ["stylesheet"],
         urls: ["*://*.wikipedia.org/*"]

@@ -3,18 +3,28 @@
     "manifest_version": 2,
     "name": "Wikilayout",
     "version": "0.0",
+    "homepage_url": "https://github.com/krnkktz/wikilayout",
 
     "description": "Attempts to improve Wikipedia's layout.",
 
     "icons": {
-        "48": "icons/wikilayout-48.png"
+        "48": "icons/wikilayout-48-on.png"
     },
 
     "permissions": [
         "webRequest",
         "webRequestBlocking",
-        "<all_urls>"
+        "<all_urls>",
+        "management"
     ],
+
+    "browser_action": {
+        "default_title": "Wikilayout",
+        "browser_style": true,
+        "default_icon": {
+            "48": "icons/wikilayout-48-on.png"
+        }
+    },
 
     "content_scripts": [
         {
@@ -49,6 +59,6 @@
     ],
 
     "background": {
-        "scripts": ["js/block.js"]
+        "scripts": ["js/block.js", "js/switch.js"]
     }
 }
