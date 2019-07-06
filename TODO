@@ -6,13 +6,12 @@
 - Deactivate on talk, special and user pages?
 - style of code js/css
 - use a linter
-- use web-ext
-- check if we really need all these permissions
 - get the switch to work
 
 Later:
 
 - implement navboxes? not sure if really needed - there could be a checkbox
-- be more precise with infoboxes
+- more precise infoboxes
 - deal with multi thumbnails
 - find a better name and logo
+- more precise permissions

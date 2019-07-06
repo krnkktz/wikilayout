@@ -14,8 +14,7 @@
     "permissions": [
         "webRequest",
         "webRequestBlocking",
-        "<all_urls>",
-        "management"
+        "<all_urls>"
     ],
 
     "browser_action": {
