@@ -1,13 +1,17 @@
 SOURCE=css/ js/ icons/ manifest.json
 BUILD=wikilayout
 
-all:
-	@mkdir -pv $(BUILD)
-	@cp -rv $(SOURCE) $(BUILD)
-	@cd wikilayout && zip -r -FS ../wikilayout.zip *
-	@rm -rfv $(BUILD)
+all: wikilayout.zip
 
-check:
+$(BUILD):
+	@mkdir -p $(BUILD)
+
+wikilayout.zip: $(BUILD)
+	@cp -r $(SOURCE) $(BUILD)
+	@cd wikilayout && zip -r -FS ../wikilayout.zip *
+	@rm -rf $(BUILD)
+
+check: wikilayout.zip
 	@jshint js/*
 	@addons-linter wikilayout.zip
 
