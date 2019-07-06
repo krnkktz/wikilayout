@@ -11,3 +11,5 @@ all:
 clean:
 	@rm -vf wikilayout.zip
 
+run:
+	@web-ext run
