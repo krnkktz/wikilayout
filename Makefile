@@ -1,4 +1,4 @@
-SOURCE=html/ css/ js/ icons/ manifest.json
+SOURCE=css/ js/ icons/ manifest.json
 BUILD=wikilayout
 
 all:
