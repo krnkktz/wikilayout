@@ -4,8 +4,6 @@
 - go through markup description and check if everything looks ok here
 - have some way to access the menu and edit, talk etc. links
 - Deactivate on talk, special and user pages?
-- style of code js/css
-- use a linter
 - get the switch to work
 
 Later:

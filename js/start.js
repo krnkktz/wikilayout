@@ -1,1 +1,7 @@
-browser.runtime.sendMessage("block");
+function start() {
+'use strict';
+
+    browser.runtime.sendMessage("block");
+}
+
+start();
