@@ -9,9 +9,28 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.0;
 }
 
+h4, h5, h6 {
+    font-size: 100%;
+}
+
+p {
+    margin: 1em 0 1em 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #bbb;
+    margin: .4em;
+}
+
 a {
     color: #444444;
     background: none;
+}
+
+a.new {
+    color: #b00;
 }
 
 a:visited {
@@ -31,9 +50,14 @@ a:hover {
 
 ul {
     list-style-type: circle;
+    padding-left: 1em;
 }
 
-p, ul, ol, .hatnote, #toc {
+ol {
+    padding-left: 1em;
+}
+
+.mw-parser-output > p, .mw-parser-output > ul, .mw-parser-output > ol, .hatnote, #toc {
     box-sizing: border-box;
     max-width: 30em;
 }
@@ -100,6 +124,10 @@ small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigat
     margin-top: 1em;
     max-width: 40em;
     box-sizing: border-box;
+}
+
+.mbox-text {
+    text-align: center;
 }
 
 #mw-navigation {
@@ -170,8 +198,8 @@ h3#p-lang {
     margin-bottom: 1.5em;
 }
 
-.mw-jump-link, #siteSub, .printfooter, #mw-hidden-catlinks, #mw-head, #p-logo, #p-navigation, #p-interaction, #p-tb, #p-wikibase-otherprojects, #p-coll-print_export, .after-portlet-lang, .uls-settings-trigger, #coordinates, #siteNotice, .navbox, .vertical-navbox, .portal {
-    display: none;
+.mw-jump-link, #siteSub, .printfooter, #mw-hidden-catlinks, .catlinks-allhidden, #mw-head, #p-logo, #p-navigation, #p-interaction, #p-tb, #p-wikibase-otherprojects, #p-coll-print_export, .after-portlet-lang, .uls-settings-trigger, #coordinates, #siteNotice, .navbox, .vertical-navbox, .portal {
+    display: none !important;
 }
 
 #p-lang {
@@ -218,16 +246,43 @@ ol.references li:target, sup.reference:target
     background-color: #ffffdd;
 }
 
+dl {
+    margin: 1em 0 1em 0;
+}
+
+dd {
+    margin-left: 1.6em;
+    margin-bottom: .1em;
+}
+
+
+.hlist.inline, .hlist.inline dl, .hlist.inline ol, .hlist.inline ul, .hlist dl dl, .hlist dl ol, .hlist dl ul, .hlist ol dl, .hlist ol ol, .hlist ol ul, .hlist ul dl, .hlist ul ol, .hlist ul ul {
+    display: inline;
+}
+
 .hlist li {
     display: inline;
 }
 
-.hlist li::after {
+.hlist dl, .hlist ol, .hlist ul {
+    margin: 0;
+    padding: 0;
+}
+
+.hlist dd::after, .hlist li::after {
     content: " · ";
 }
 
-.hlist li:last-child::after {
+.hlist dd:last-child::after, .hlist li:last-child::after {
     content: none;
+}
+
+.hlist dd dd:first-child::before, .hlist dd dt:first-child::before, .hlist dd li:first-child::before, .hlist dt dd:first-child::before, .hlist dt dt:first-child::before, .hlist dt li:first-child::before, .hlist li dd:first-child::before, .hlist li dt:first-child::before, .hlist li li:first-child::before {
+    content: " (";
+}
+
+.hlist dd dd:last-child::after, .hlist dd dt:last-child::after, .hlist dd li:last-child::after, .hlist dt dd:last-child::after, .hlist dt dt:last-child::after, .hlist dt li:last-child::after, .hlist li dd:last-child::after, .hlist li dt:last-child::after, .hlist li li:last-child::after {
+    content: ")";
 }
 
 .toctogglespan, .toctogglecheckbox {
@@ -245,5 +300,12 @@ ol.references li:target, sup.reference:target
 
 .tnone .thumbimage {
     width: 80vw;
+}
+
+.module-shortcutboxplain {
+    float:right;
+    border: 1px solid #bbb;
+    padding: .4em .6em .4em .6em;
+    margin: 0 0 0 .6em;
 }
 

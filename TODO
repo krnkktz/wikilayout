@@ -6,8 +6,11 @@
 - Deactivate on talk, special and user pages?
 - get the switch to work
 
+- ULs can't all be 30em wide, bc some are in mboxes for ex
+
 Later:
 
+- clean up and organize all the css
 - implement navboxes? not sure if really needed - there could be a checkbox
 - more precise infoboxes
 - deal with multi thumbnails
