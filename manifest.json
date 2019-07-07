@@ -29,13 +29,7 @@
         {
             "matches": ["*://*.wikipedia.org/wiki/*"],
             "run_at": "document_start",
-            "css": ["css/style.css"]
-        },
-
-        {
-            "matches": ["*://*.wikipedia.org/wiki/*"],
-            "run_at": "document_start",
-            "css": ["css/narrow.css"]
+            "css": ["css/style.css", "css/narrow.css", "css/highlight.css"]
         },
 
         {

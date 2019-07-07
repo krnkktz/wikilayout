@@ -1,12 +1,9 @@
 - find a better visited link color
 - fix & layout slideshow
-- hierarchize titles
 - go through markup description and check if everything looks ok here
 - have some way to access the menu and edit, talk etc. links
 - Deactivate on talk, special and user pages?
 - get the switch to work
-
-- ULs can't all be 30em wide, bc some are in mboxes for ex
 
 Later:
 

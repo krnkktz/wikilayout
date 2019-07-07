@@ -90,6 +90,25 @@ small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigat
     font-size: 75%;
 }
 
+big {
+    font-size: 133%;
+}
+
+code {
+    background-color: #f6f6f6;
+    padding: .2em;
+}
+
+pre {
+    margin: 0;
+}
+
+.mw-highlight {
+    background: #f6f6f6;
+    margin-bottom: 1em;
+    padding: .5em;
+}
+
 .center {
     text-align: center;
 }
@@ -100,6 +119,7 @@ small, .catlinks, .ambox, .ombox, .mbox-small, .wikitable, .infobox, .mw-navigat
 
 #content {
     padding: 4em;
+    padding-bottom: .6em;
 }
 
 .infobox {
@@ -309,3 +329,6 @@ dd {
     margin: 0 0 0 .6em;
 }
 
+.smallcaps {
+    font-variant: small-caps;
+}

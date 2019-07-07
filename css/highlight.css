@@ -1,0 +1,130 @@
+.mw-highlight .c, .mw-highlight .ch, .mw-highlight .cm, .mw-highlight .cpf,
+.mw-highlight .c1, .mw-highlight .cs, .mw-highlight .ge, .mw-highlight .sd {
+    font-style: italic;
+}
+
+.mw-highlight .k, .mw-highlight .gh, .mw-highlight .gp, .mw-highlight .gs,
+.mw-highlight .gu, .mw-highlight .kc, .mw-highlight .kd, .mw-highlight .kn,
+.mw-highlight .kr, .mw-highlight .nc, .mw-highlight .ni, .mw-highlight .ne,
+.mw-highlight .nn, .mw-highlight .nt, .mw-highlight .ow, .mw-highlight .se,
+.mw-highlight .si {
+    font-weight: bold;
+}
+
+
+.mw-highlight .gh {
+    color: #000080;
+}
+
+.mw-highlight .nc, .mw-highlight .nf, .mw-highlight .nn, .mw-highlight .fm {
+    color: #0000ff;
+}
+
+.mw-highlight .gi {
+    color: #00a000;
+}
+
+.mw-highlight .gt {
+    color: #0044dd;
+}
+
+.mw-highlight .k, .mw-highlight .kc, .mw-highlight .kd, .mw-highlight .kn,
+.mw-highlight .kp, .mw-highlight .kr, .mw-highlight .nb, .mw-highlight .nt,
+.mw-highlight .sx, .mw-highlight .bp {
+    color: #008000;
+}
+
+.mw-highlight .nv, .mw-highlight .ss, .mw-highlight .vc, .mw-highlight .vg,
+.mw-highlight .vi, .mw-highlight .vm {
+    color: #19177c;
+}
+
+.mw-highlight .c, .mw-highlight .ch, .mw-highlight .cm, .mw-highlight .cpf,
+.mw-highlight .c1, .mw-highlight .cs {
+    color: #408080;
+}
+
+.mw-highlight .o, .mw-highlight .m, .mw-highlight .mb, .mw-highlight .mf,
+.mw-highlight .mh, .mw-hghlight .mi, .mw-highlight .mo, .mw-highlight .il {
+    color: #666666;
+}
+
+.mw-highlight .na {
+    color: #7d9029;
+}
+
+.mw-highlight .gu {
+    color: #800080;
+}
+
+.mw-highlight .no {
+    color: #880000;
+}
+
+.mw-highlight .go {
+    color: #888888;
+}
+
+.mw-highlight .ni {
+    color: #999999;
+}
+
+.mw-highlight .gd, .mw-highlight .gp {
+    color: #a00000;
+}
+
+.mw-highlight .nl {
+    color: #a0a000;
+}
+
+.mw-highlight .nd, .mw-highlight .ow {
+    color: #aa22ff;
+}
+
+.mw-highlight .kt {
+    color: #b00040;
+}
+
+.mw-highlight .s, .mw-highlight .sa, .mw-highlight .sb, .mw-highlight .sc,
+.mw-highlight .dl, .mw-highlight .sd, .mw-highlight .s2, .mw-highlight .sh,
+.mw-highlight .s1 {
+    color: #ba2121;
+}
+
+.mw-highlight .se {
+    color: #bb6622;
+}
+
+.mw-highlight .si, .mw-highlight .sr {
+    color: #bb6688;
+}
+
+.mw-highlight .w {
+    color: #bbbbbb;
+}
+
+.mw-highlight .cp {
+    color: #bc7a00;
+}
+
+.mw-highlight .ne {
+    color: #d2413a;
+}
+
+.mw-highlight .gr {
+    color: #ff0000;
+}
+
+
+.mw-highlight .err {
+    border: 1px solid #ff0000;
+}
+
+.mw-highlight .hll {
+    display: block;
+    background-color: #ffffcc;
+}
+
+.mw-highlight .lineno {
+    float: left;
+}
