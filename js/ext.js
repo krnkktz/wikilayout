@@ -35,11 +35,13 @@ function ext() {
         return src;
     }
 
+
     browser.runtime.sendMessage('unblock');
 
 
+
     document.querySelectorAll(':not(.tmulti) .tnone .thumbinner, :not(.tmulti) .tleft .thumbinner, :not(.tmulti) .tright .thumbinner').forEach(el => {
-        if (el.firstChild && el.firstChild.firstChild && el.firstChild.firstChild.style) {
+        if (el.firstChild && el.firstChild.firstChild && el.firstChild.firstChild.style && el.firstChild.firstChild.src) {
             var tc = el.firstChild.firstChild;
             var s = tc.src.split('/');
             if (s.length > 0) {
@@ -54,6 +56,7 @@ function ext() {
             console.log(el);
         }
     });
+
 
 
     document.querySelectorAll('img:not(.thumbimage)').forEach(el => {
